@@ -14,7 +14,12 @@ const modal = (props) => {
         timeout={animationTiming} 
         mountOnEnter
         unmountOnExit
-        classNames="fade-slide">
+        classNames={{
+            enter: '',
+            enterActive: 'ModalOpen',
+            exit: '',
+            exitActive: 'ModalClose',
+        }}>
                 <div className="Modal">
                 <h1>Um Modal</h1>
                 <button className="Button" onClick={props.closed}>Fechar</button>
